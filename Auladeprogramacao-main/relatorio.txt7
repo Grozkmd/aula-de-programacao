@@ -1,0 +1,53 @@
+================================================================================
+RELATORIO DE ALTERACOES E RESUMO DO PROGRAMA
+================================================================================
+
+ALTERACOES REALIZADAS
+--------------------------------------------------------------------------------
+
+1. Arquivo questoes.txt
+   - As perguntas e respostas foram organizadas com titulo, separadores,
+     numeracao e alinhamento padronizado.
+   - As respostas foram preenchidas avaliando o funcionamento do sistema,
+     incluindo cadastro, matricula, relatorios, banco de dados, validacoes e
+     configuracoes para uso fora do ambiente de desenvolvimento.
+   - A resposta sobre o metodo de remocao de dados do aluno foi atualizada depois
+     que o metodo remover_dados foi adicionado na classe Aluno.
+
+2. Arquivo questoes.txt2
+   - Foram respondidas perguntas sobre orientacao a objetos no projeto.
+   - O arquivo foi organizado com o mesmo padrao visual do questionario anterior.
+   - A resposta sobre o metodo remover_dados foi corrigida para explicar seu
+     funcionamento atual.
+
+3. Arquivo Aluno.py
+   - Foi adicionado o metodo remover_dados.
+   - Esse metodo remove o aluno das listas de alunos das disciplinas em que ele
+     estava matriculado.
+   - Depois, limpa os dados do aluno: nome, cpf, matricula, curso e lista de
+     disciplinas.
+
+4. Execucao do programa
+   - As dependencias do requirements.txt foram verificadas.
+   - A versao de terminal foi executada com sucesso usando Sistema_academico.py.
+   - A versao web foi executada na porta 5001.
+   - Foi usado um banco SQLite temporario fora da pasta do OneDrive para evitar
+     erro de gravacao no banco local.
+
+--------------------------------------------------------------------------------
+
+RESUMO MUITO CURTO DO PROGRAMA
+--------------------------------------------------------------------------------
+
+O programa e um sistema academico feito em Python.
+
+Ele permite representar alunos, professores e disciplinas usando orientacao a
+objetos. Tambem permite matricular alunos em disciplinas, associar professores a
+disciplinas, listar informacoes e gerar relatorios.
+
+A versao web usa Flask e banco de dados para cadastrar, editar, listar e
+consultar dados academicos. O sistema pode usar MySQL ou SQLite local.
+
+================================================================================
+FIM DO RELATORIO
+================================================================================

@@ -1,0 +1,61 @@
+{
+  "alunos": [
+    {
+      "nome": "Felipe Santos",
+      "cpf": "555.666.777-88",
+      "matricula": "2026001",
+      "curso": "Sistemas de Informacao",
+      "disciplinas": [
+        "Programacao Orientada a Objetos"
+      ]
+    },
+    {
+      "nome": "Ana Lima",
+      "cpf": "999.888.777-66",
+      "matricula": "2026002",
+      "curso": "Ciencia da Computacao",
+      "disciplinas": [
+        "Programacao Orientada a Objetos"
+      ]
+    }
+  ],
+  "professores": [
+    {
+      "nome": "Mariana Souza",
+      "cpf": "111.222.333-44",
+      "registro": "PROF001",
+      "area": "Programacao",
+      "disciplinas": [
+        "Programacao Orientada a Objetos"
+      ]
+    }
+  ],
+  "disciplinas": [
+    {
+      "nome": "Programacao Orientada a Objetos",
+      "codigo": "POO101",
+      "carga_horaria": 80,
+      "professor": "Mariana Souza",
+      "alunos": [
+        "Felipe Santos",
+        "Ana Lima"
+      ]
+    }
+  ],
+  "matriculas": [
+    {
+      "aluno": "Felipe Santos",
+      "matricula": "2026001",
+      "disciplina": "Programacao Orientada a Objetos",
+      "codigo": "POO101",
+      "status": "ativa"
+    },
+    {
+      "aluno": "Ana Lima",
+      "matricula": "2026002",
+      "disciplina": "Programacao Orientada a Objetos",
+      "codigo": "POO101",
+      "status": "ativa"
+    }
+  ]
+}

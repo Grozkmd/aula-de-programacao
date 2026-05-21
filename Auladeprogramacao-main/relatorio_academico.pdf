@@ -1,0 +1,64 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 760 >>
+stream
+BT
+/F1 11 Tf
+50 800 Td
+14 TL
+(Relatorio do Sistema Academico) Tj
+T*
+(Gerado em: 19/05/2026 16:53) Tj
+T*
+() Tj
+T*
+(ALUNOS) Tj
+T*
+(- Felipe Santos | CPF: 555.666.777-88 | Matricula: 2026001 | Curso: Sistemas de Informacao) Tj
+T*
+(- Ana Lima | CPF: 999.888.777-66 | Matricula: 2026002 | Curso: Ciencia da Computacao) Tj
+T*
+() Tj
+T*
+(PROFESSORES) Tj
+T*
+(- Mariana Souza | CPF: 111.222.333-44 | Registro: PROF001 | Area: Programacao) Tj
+T*
+() Tj
+T*
+(DISCIPLINAS) Tj
+T*
+(- Programacao Orientada a Objetos | Codigo: POO101 | Carga: 80h | Professor: Mariana Souza) Tj
+T*
+() Tj
+T*
+(MATRICULAS) Tj
+T*
+(- Felipe Santos em Programacao Orientada a Objetos \(POO101\) | Status: ativa) Tj
+T*
+(- Ana Lima em Programacao Orientada a Objetos \(POO101\) | Status: ativa) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 5
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000290 00000 n 
+trailer
+<< /Size 5 /Root 1 0 R >>
+startxref
+1101
+%%EOF

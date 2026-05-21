@@ -1,0 +1,271 @@
+================================================================================
+QUESTIONARIO SOBRE ORIENTACAO A OBJETOS NO SISTEMA ACADEMICO
+================================================================================
+
+Nº   PERGUNTA / RESPOSTA
+--------------------------------------------------------------------------------
+
+01   PERGUNTA:
+     O que e uma classe e quais classes foram criadas neste projeto?
+
+     RESPOSTA:
+     Classe e um modelo usado para criar objetos. Ela define quais atributos e
+     metodos os objetos terao.
+
+     Neste projeto foram criadas as classes Pessoa, Aluno, Professor,
+     Disciplina e SistemaAcademico.
+
+--------------------------------------------------------------------------------
+
+02   PERGUNTA:
+     O que e um objeto e quais objetos sao instanciados na funcao main de
+     Sistema_academico.py?
+
+     RESPOSTA:
+     Objeto e uma instancia de uma classe, ou seja, e algo criado a partir do
+     modelo definido pela classe.
+
+     Na funcao main sao instanciados os seguintes objetos:
+     - sistema, da classe SistemaAcademico.
+     - professor, da classe Professor.
+     - aluno_1, da classe Aluno.
+     - aluno_2, da classe Aluno.
+     - disciplina, da classe Disciplina.
+
+--------------------------------------------------------------------------------
+
+03   PERGUNTA:
+     Qual e a responsabilidade da classe Pessoa dentro do projeto?
+
+     RESPOSTA:
+     A classe Pessoa representa uma pessoa generica do sistema. Ela guarda os
+     atributos comuns entre alunos e professores, que sao nome e cpf. Tambem
+     possui o metodo __str__, que retorna uma representacao textual simples da
+     pessoa.
+
+--------------------------------------------------------------------------------
+
+04   PERGUNTA:
+     Por que Aluno e Professor herdam da classe Pessoa?
+
+     RESPOSTA:
+     Aluno e Professor herdam de Pessoa porque ambos sao tipos de pessoa e
+     possuem dados em comum, como nome e cpf. Com a heranca, o projeto evita
+     repeticao de codigo e permite reutilizar os atributos e comportamentos da
+     classe Pessoa.
+
+--------------------------------------------------------------------------------
+
+05   PERGUNTA:
+     Quais atributos a classe Aluno recebe diretamente da classe Pessoa?
+
+     RESPOSTA:
+     A classe Aluno recebe da classe Pessoa os atributos nome e cpf.
+
+--------------------------------------------------------------------------------
+
+06   PERGUNTA:
+     Quais atributos sao especificos da classe Aluno?
+
+     RESPOSTA:
+     Os atributos especificos da classe Aluno sao:
+     - matricula.
+     - curso.
+     - disciplinas.
+
+     A lista disciplinas armazena as disciplinas em que o aluno esta matriculado.
+
+--------------------------------------------------------------------------------
+
+07   PERGUNTA:
+     Quais atributos sao especificos da classe Professor?
+
+     RESPOSTA:
+     Os atributos especificos da classe Professor sao:
+     - registro.
+     - area.
+     - disciplinas.
+
+     A lista disciplinas armazena as disciplinas atribuidas ao professor.
+
+--------------------------------------------------------------------------------
+
+08   PERGUNTA:
+     Qual e a responsabilidade da classe Disciplina no sistema?
+
+     RESPOSTA:
+     A classe Disciplina representa uma disciplina do sistema academico. Ela
+     armazena nome, codigo, carga horaria, professor responsavel e a lista de
+     alunos matriculados. Tambem controla a associacao da disciplina com alunos e
+     professor por meio dos metodos matricular_aluno e definir_professor.
+
+--------------------------------------------------------------------------------
+
+09   PERGUNTA:
+     Como o metodo super() e utilizado nos construtores de Aluno e Professor?
+
+     RESPOSTA:
+     O metodo super() e usado nos construtores de Aluno e Professor para chamar o
+     construtor da classe Pessoa. Assim, os atributos nome e cpf sao inicializados
+     pela classe Pessoa antes de cada classe filha definir seus atributos
+     especificos.
+
+     Em Aluno:
+     super().__init__(nome, cpf)
+
+     Em Professor:
+     super().__init__(nome, cpf)
+
+--------------------------------------------------------------------------------
+
+10   PERGUNTA:
+     O que o metodo __init__ faz em cada classe do projeto?
+
+     RESPOSTA:
+     O metodo __init__ e o construtor da classe. Ele e executado quando um objeto
+     e criado e serve para inicializar seus atributos.
+
+     Em Pessoa, inicializa nome e cpf.
+     Em Aluno, inicializa nome, cpf, matricula, curso e disciplinas.
+     Em Professor, inicializa nome, cpf, registro, area e disciplinas.
+     Em Disciplina, inicializa nome, codigo, carga_horaria, professor e alunos.
+     Em SistemaAcademico, inicializa as listas alunos, professores e disciplinas.
+
+--------------------------------------------------------------------------------
+
+11   PERGUNTA:
+     O que o metodo __str__ permite fazer ao imprimir objetos como Aluno,
+     Professor e Disciplina?
+
+     RESPOSTA:
+     O metodo __str__ define como o objeto sera exibido quando for usado em um
+     print. Em vez de aparecer uma representacao tecnica do objeto, o sistema
+     mostra um texto organizado com os principais dados, como nome, CPF,
+     matricula, registro, codigo ou professor da disciplina.
+
+--------------------------------------------------------------------------------
+
+12   PERGUNTA:
+     Como acontece a associacao entre um aluno e uma disciplina?
+
+     RESPOSTA:
+     A associacao acontece quando o metodo matricular_aluno da classe Disciplina
+     recebe um objeto Aluno. Esse metodo adiciona o aluno na lista de alunos da
+     disciplina e tambem adiciona a disciplina na lista de disciplinas do aluno.
+
+--------------------------------------------------------------------------------
+
+13   PERGUNTA:
+     Como acontece a associacao entre um professor e uma disciplina?
+
+     RESPOSTA:
+     A associacao acontece pelo metodo definir_professor da classe Disciplina.
+     Esse metodo define o professor responsavel pela disciplina e tambem adiciona
+     a disciplina na lista de disciplinas do professor.
+
+--------------------------------------------------------------------------------
+
+14   PERGUNTA:
+     Por que a classe Disciplina possui uma lista de alunos?
+
+     RESPOSTA:
+     A classe Disciplina possui uma lista de alunos porque uma disciplina pode ter
+     varios alunos matriculados. Essa lista permite armazenar e consultar todos os
+     alunos vinculados a uma mesma disciplina.
+
+--------------------------------------------------------------------------------
+
+15   PERGUNTA:
+     Por que a classe Aluno possui uma lista de disciplinas?
+
+     RESPOSTA:
+     A classe Aluno possui uma lista de disciplinas porque um aluno pode estar
+     matriculado em varias disciplinas. Essa lista permite consultar todas as
+     disciplinas em que o aluno esta matriculado.
+
+--------------------------------------------------------------------------------
+
+16   PERGUNTA:
+     Como o metodo matricular_aluno ajuda a manter a relacao entre aluno e
+     disciplina?
+
+     RESPOSTA:
+     O metodo matricular_aluno mantem a relacao nos dois sentidos. Primeiro, ele
+     verifica se o aluno ainda nao esta na lista de alunos da disciplina. Depois,
+     adiciona o aluno na disciplina e adiciona a disciplina na lista do aluno.
+     Isso evita duplicidade e mantem as informacoes sincronizadas.
+
+--------------------------------------------------------------------------------
+
+17   PERGUNTA:
+     Como o metodo definir_professor ajuda a manter a relacao entre professor e
+     disciplina?
+
+     RESPOSTA:
+     O metodo definir_professor define o professor responsavel dentro da
+     disciplina e, ao mesmo tempo, adiciona essa disciplina na lista de
+     disciplinas do professor. Dessa forma, a disciplina sabe quem e seu professor
+     e o professor tambem sabe quais disciplinas estao associadas a ele.
+
+--------------------------------------------------------------------------------
+
+18   PERGUNTA:
+     O que o metodo remover_dados da classe Aluno faz e quais atributos ele
+     modifica?
+
+     RESPOSTA:
+     O metodo remover_dados remove os dados do aluno e desfaz suas associacoes
+     com as disciplinas. Primeiro, ele percorre a lista de disciplinas do aluno e,
+     se o aluno estiver na lista de alunos de alguma disciplina, remove esse aluno
+     dessa lista.
+
+     Depois, o metodo limpa os atributos nome, cpf, matricula e curso, atribuindo
+     uma string vazia a cada um deles. Por fim, ele esvazia a lista disciplinas
+     usando clear().
+
+     Os atributos modificados sao:
+     - nome.
+     - cpf.
+     - matricula.
+     - curso.
+     - disciplinas.
+
+--------------------------------------------------------------------------------
+
+19   PERGUNTA:
+     Qual e a responsabilidade da classe SistemaAcademico em relacao as outras
+     classes?
+
+     RESPOSTA:
+     A classe SistemaAcademico centraliza o gerenciamento do sistema. Ela mantem
+     listas de alunos, professores e disciplinas, cadastra objetos, busca alunos
+     por matricula, professores por registro e disciplinas por codigo. Tambem
+     realiza matriculas, edicoes, listagens e organizacao dos dados para gerar
+     relatorios.
+
+--------------------------------------------------------------------------------
+
+20   PERGUNTA:
+     Como os conceitos de classe, objeto, heranca, encapsulamento e associacao
+     aparecem no projeto?
+
+     RESPOSTA:
+     Classe aparece nos modelos Pessoa, Aluno, Professor, Disciplina e
+     SistemaAcademico.
+
+     Objeto aparece quando a funcao main cria instancias como professor,
+     aluno_1, aluno_2, disciplina e sistema.
+
+     Heranca aparece quando Aluno e Professor herdam da classe Pessoa.
+
+     Encapsulamento aparece porque cada classe organiza seus proprios atributos e
+     metodos. Por exemplo, Aluno controla suas disciplinas, Professor controla
+     suas disciplinas e Disciplina controla professor e alunos matriculados.
+
+     Associacao aparece nas relacoes entre aluno e disciplina e entre professor e
+     disciplina. Essas relacoes sao mantidas pelos metodos matricular_aluno e
+     definir_professor.
+
+================================================================================
+FIM DO QUESTIONARIO
+================================================================================
